@@ -31,11 +31,13 @@ html {
 body {
   font-family: $font-primary;
   line-height: $leading-normal;
-  color: $black-soft;
-  background: $white-soft;
+  color: $black;
+  background: linear-gradient(135deg, $white-soft 0%, $gray-100 100%);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
+  letter-spacing: 0.3px;
 }
 
 // ================================

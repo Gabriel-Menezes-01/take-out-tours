@@ -19,17 +19,17 @@ nav {
   left: 0;
   width: 100vw;
   height: 70px;
-  background: rgba(20, 20, 20, 0.95);
+  background: rgba(44, 44, 44, 0.95);
   backdrop-filter: blur(20px);
-  box-shadow: 0 2px 30px rgba(220, 38, 38, 0.3);
+  box-shadow: 0 2px 30px rgba(255, 71, 87, 0.3);
   z-index: 99;
   transition: all 0.4s ease;
-  border-bottom: 1px solid rgba(220, 38, 38, 0.4);
+  border-bottom: 1px solid rgba(255, 71, 87, 0.4);
 }
 
 nav.scrolled {
-  background: rgba(10, 10, 10, 0.98);
-  box-shadow: 0 4px 40px rgba(220, 38, 38, 0.4);
+  background: rgba(26, 26, 26, 0.98);
+  box-shadow: 0 4px 40px rgba(255, 71, 87, 0.4);
   backdrop-filter: blur(25px);
 }
 
@@ -47,10 +47,10 @@ nav .navbar {
 /* Logo melhorado */
 .navbar .logo a {
   font-size: 1.8rem;
-  color: #dc2626;
+  color: #ff4757;
   text-decoration: none;
   font-weight: 800;
-  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+  background: linear-gradient(135deg, #ff4757 0%, #c44569 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -66,7 +66,7 @@ nav .navbar {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+  background: linear-gradient(135deg, #ff4757 0%, #c44569 100%);
   transition: width 0.4s ease;
 }
 
@@ -76,7 +76,7 @@ nav .navbar {
 
 .navbar .logo a:hover {
   transform: scale(1.05);
-  filter: drop-shadow(0 0 10px rgba(220, 38, 38, 0.5));
+  filter: drop-shadow(0 0 10px rgba(255, 71, 87, 0.5));
 }
 
 /* Navbar Links */
@@ -116,7 +116,7 @@ nav .navbar .links li a::after {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+  background: linear-gradient(135deg, #ff4757 0%, #c44569 100%);
   transition: width 0.3s ease;
 }
 
@@ -125,14 +125,14 @@ nav .navbar .links li:hover a::after {
 }
 
 nav .navbar .links li:hover a {
-  color: #dc2626;
+  color: #ff4757;
 }
 
 .links li:hover .experiencias-arrow,
 .links li:hover .destinos-arrow,
 .links li:hover .sobre-arrow {
   transform: rotate(180deg);
-  color: #dc2626;
+  color: #ff4757;
 }
 
 nav .navbar .links li .arrow {
@@ -152,7 +152,7 @@ nav .navbar .links li .sub-menu {
   line-height: 40px;
   background: rgba(20, 20, 20, 0.98);
   backdrop-filter: blur(10px);
-  box-shadow: 0 10px 40px rgba(220, 38, 38, 0.3);
+  box-shadow: 0 10px 40px rgba(255, 71, 87, 0.3);
   border-radius: 0 0 10px 10px;
   display: none;
   z-index: 2;
@@ -172,12 +172,12 @@ nav .navbar .links li:hover .sobre-sub-menu {
 
 .navbar .links li .sub-menu li {
   padding: 0 25px;
-  border-bottom: 1px solid rgba(220, 38, 38, 0.2);
+  border-bottom: 1px solid rgba(255, 71, 87, 0.2);
   transition: all 0.3s ease;
 }
 
 .navbar .links li .sub-menu li:hover {
-  background: rgba(220, 38, 38, 0.1);
+  background: rgba(255, 71, 87, 0.1);
   padding-left: 30px;
 }
 
@@ -213,8 +213,8 @@ nav .navbar .links li:hover .sobre-sub-menu {
 }
 
 .navbar .search-box i:hover {
-  background: rgba(220, 38, 38, 0.2);
-  color: #dc2626;
+  background: rgba(255, 71, 87, 0.2);
+  color: #ff4757;
 }
 
 .navbar .search-box .input-box {
@@ -229,7 +229,7 @@ nav .navbar .links li:hover .sobre-sub-menu {
   opacity: 0;
   pointer-events: none;
   transition: all 0.4s ease;
-  box-shadow: 0 10px 40px rgba(220, 38, 38, 0.3);
+  box-shadow: 0 10px 40px rgba(255, 71, 87, 0.3);
 }
 
 .navbar.showInput .search-box .input-box {
@@ -265,8 +265,8 @@ nav .navbar .links li:hover .sobre-sub-menu {
 }
 
 .search-box .input-box input:focus {
-  border-color: #dc2626;
-  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+  border-color: #ff4757;
+  box-shadow: 0 0 0 3px rgba(255, 71, 87, 0.1);
 }
 
 .navbar .nav-links .sidebar-logo {
@@ -310,8 +310,8 @@ nav .navbar .links li:hover .sobre-sub-menu {
   }
   
   .navbar .bi-list:hover {
-    background: rgba(220, 38, 38, 0.2);
-    color: #dc2626;
+    background: rgba(255, 71, 87, 0.2);
+    color: #ff4757;
   }
   
   nav .navbar .nav-links {
@@ -342,14 +342,14 @@ nav .navbar .links li:hover .sobre-sub-menu {
     justify-content: space-between;
     margin-bottom: 30px;
     padding-bottom: 20px;
-    border-bottom: 2px solid rgba(220, 38, 38, 0.2);
+    border-bottom: 2px solid rgba(255, 71, 87, 0.2);
   }
   
   .sidebar-logo .logo-name {
     font-size: 1.8rem;
     color: #1f1f1f;
     font-weight: 700;
-    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    background: linear-gradient(135deg, #ff4757 0%, #c44569 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -366,8 +366,8 @@ nav .navbar .links li:hover .sobre-sub-menu {
   }
   
   .sidebar-logo i:hover {
-    background: rgba(220, 38, 38, 0.1);
-    color: #dc2626;
+    background: rgba(255, 71, 87, 0.1);
+    color: #ff4757;
   }
   
   nav .navbar .links {

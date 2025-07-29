@@ -139,9 +139,9 @@
 }
 
 .slider .btn-reserva button:first-child {
-    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    background: linear-gradient(135deg, #ff4757 0%, #c44569 100%);
     color: white;
-    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.5);
+    box-shadow: 0 8px 25px rgba(255, 71, 87, 0.5);
 }
 
 .slider .btn-reserva button:last-child {
@@ -153,7 +153,7 @@
 
 .slider .btn-reserva button:hover {
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 15px 35px rgba(220, 38, 38, 0.6);
+    box-shadow: 0 15px 35px rgba(255, 71, 87, 0.6);
 }
 
 .slider .setas {
@@ -233,7 +233,7 @@
 .slider-progress-bar {
     height: 100%;
     width: 0%;
-    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    background: linear-gradient(135deg, #ff4757 0%, #c44569 100%);
     transition: width linear;
 }
 

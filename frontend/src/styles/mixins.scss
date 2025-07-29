@@ -87,20 +87,22 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-weight: $font-semibold;
+  font-weight: $font-medium;
   text-decoration: none;
   border: none;
-  border-radius: $border-radius-xl;
+  border-radius: 12px;
   cursor: pointer;
-  transition: all $transition-normal;
-  text-transform: uppercase;
+  transition: all cubic-bezier(0.25, 0.8, 0.25, 1) 0.3s;
+  text-transform: none;
   letter-spacing: 0.5px;
   position: relative;
   overflow: hidden;
+  padding: 12px 24px;
+  font-size: $text-base;
 
   &:focus {
-    outline: 2px solid $primary-red;
-    outline-offset: 2px;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($primary-red, 0.2);
   }
 
   &:disabled {
@@ -111,17 +113,18 @@
 
 @mixin button-primary {
   @include button-base;
-  background: $gradient-primary;
+  background: linear-gradient(135deg, $primary-red 0%, $primary-red-dark 100%);
   color: $white;
-  box-shadow: $shadow-red;
+  box-shadow: 0 2px 10px rgba($primary-red, 0.2);
 
   &:hover {
-    transform: translateY(-2px) scale(1.02);
-    box-shadow: $shadow-red-lg;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba($primary-red, 0.3);
+    background: linear-gradient(135deg, $primary-red-light 0%, $primary-red 100%);
   }
 
   &:active {
-    transform: translateY(0) scale(0.98);
+    transform: translateY(0);
   }
 }
 

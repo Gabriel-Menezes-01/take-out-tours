@@ -76,7 +76,48 @@ nav.scrolled {
 .nav-links,
 .sidebar {
   background: var(--white) !important;
-}/* Melhorias no body para visual mais casual */
+}/* ===============================================
+   TEXTOS SOBRE IMAGENS - MELHOR VISIBILIDADE
+   =============================================== */
+
+/* Textos sobre imagens com sombra forte */
+.text-over-image,
+.hero-text,
+.slider-text,
+.overlay-text {
+  color: white !important;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Títulos sobre imagens */
+h1.text-over-image,
+h2.text-over-image,
+h3.text-over-image,
+.text-over-image h1,
+.text-over-image h2,
+.text-over-image h3 {
+  color: white !important;
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.9) !important;
+  font-weight: 700 !important;
+}
+
+/* Parágrafos sobre imagens */
+p.text-over-image,
+.text-over-image p {
+  color: white !important;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Overlays com melhor contraste */
+.overlay,
+.image-overlay,
+.destination-overlay,
+.slider-overlay {
+  background: rgba(0, 0, 0, 0.6) !important;
+  color: white !important;
+}
+
+/* Melhorias no body para visual mais casual */
 body {
     background: linear-gradient(135deg, var(--white-soft) 0%, var(--gray-100) 100%);
     color: var(--black);

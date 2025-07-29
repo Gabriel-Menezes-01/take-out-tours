@@ -301,12 +301,16 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     opacity: 0;
     transition: opacity 0.4s ease;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 .destination-card:hover .destination-overlay {
@@ -325,9 +329,26 @@ body {
 }
 
 .btn-explore:hover {
-    background: #dc2626;
+    background: #ff4757;
     color: white;
     transform: scale(1.05);
+}
+
+/* Estilos para textos sobre imagens nos overlays */
+.destination-overlay h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.destination-overlay p {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+    line-height: 1.4;
 }
 
 .destination-info {

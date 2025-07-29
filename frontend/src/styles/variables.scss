@@ -133,9 +133,9 @@ $shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
 $shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
 $shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
 
-// Sombras coloridas
-$shadow-red: 0 8px 25px rgba($primary-red, 0.3);
-$shadow-red-lg: 0 15px 35px rgba($primary-red, 0.4);
+// Sombras coloridas - sem vermelho
+$shadow-red: 0 8px 25px rgba($black, 0.1);
+$shadow-red-lg: 0 15px 35px rgba($black, 0.15);
 
 // =================
 // TRANSIÇÕES

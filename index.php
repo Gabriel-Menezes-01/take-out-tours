@@ -11,8 +11,8 @@
   <meta property="og:title" content="Take Out Tours - Portugal com Alma">
   <meta property="og:description" content="Descubra Portugal com alma através de experiências autênticas e guias locais especializados.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://takeouttours.pt">
-  <meta name="theme-color" content="#667eea">
+  <meta property="og:url" content="https://gabriel-menezes-01.github.io/take-out-tours/">
+  <meta name="theme-color" content="#dc2626">
 
   <title>Take Out Tours - Portugal com Alma</title>
 

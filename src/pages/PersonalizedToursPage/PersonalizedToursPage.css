@@ -1,0 +1,12 @@
+.ptp { padding: var(--spacing-2xl) 0; }
+.ptp-grid { display: grid; grid-template-columns: 2fr 1fr; gap: var(--spacing-2xl); margin-top: var(--spacing-xl); }
+.ptp-group { margin-bottom: var(--spacing-xl); }
+.ptp-checkboxes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--spacing-md); }
+.ptp-check { display: flex; align-items: center; gap: var(--spacing-sm); padding: var(--spacing-sm) var(--spacing-md); border: 1px solid var(--color-border); border-radius: var(--radius-lg); cursor: pointer; user-select: none; }
+.ptp-check.checked { background: var(--accent-light); border-color: var(--accent); }
+.ptp-summary { border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: var(--spacing-xl); background: var(--color-bg); box-shadow: var(--shadow-sm); }
+.ptp-actions { margin-top: var(--spacing-lg); display: flex; gap: var(--spacing-md); flex-wrap: wrap; }
+
+@media (max-width: 1024px) {
+  .ptp-grid { grid-template-columns: 1fr; }
+}

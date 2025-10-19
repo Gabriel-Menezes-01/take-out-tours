@@ -1,0 +1,62 @@
+.patrimonio-historia-page .ph-hero {
+  background: linear-gradient(120deg, var(--accent-light) 0%, #fff 100%);
+  padding: 4rem 0 2rem 0;
+  text-align: center;
+}
+.ph-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.ph-hero p {
+  color: var(--color-text-muted);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.ph-page-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
+}
+.ph-page-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ph-page-img-wrap {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-md);
+}
+.ph-page-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.ph-page-card h3 {
+  margin: var(--spacing-md) 0 var(--spacing-xs) 0;
+}
+.ph-page-card p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
+}
+@media (max-width: 1024px) {
+  .ph-page-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .ph-page-grid {
+    grid-template-columns: 1fr;
+  }
+}

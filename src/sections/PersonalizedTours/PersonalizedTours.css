@@ -1,0 +1,42 @@
+.personalized-tours {
+	padding: var(--spacing-3xl) 0;
+	background: var(--color-bg-secondary);
+	border-top: 1px solid var(--color-border);
+	border-bottom: 1px solid var(--color-border);
+}
+
+.pt-grid {
+	margin-top: var(--spacing-2xl);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: var(--spacing-xl);
+}
+
+.pt-card {
+	background: var(--color-bg);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-xl);
+	padding: var(--spacing-xl);
+	box-shadow: var(--shadow-sm);
+}
+
+.pt-card h3 {
+	margin-bottom: var(--spacing-sm);
+}
+
+.pt-card p {
+	color: var(--color-text-muted);
+}
+
+.pt-cta {
+	margin-top: var(--spacing-2xl);
+	display: flex;
+	gap: var(--spacing-md);
+	flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+	.pt-grid {
+		grid-template-columns: 1fr;
+	}
+}

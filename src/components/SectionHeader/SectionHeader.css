@@ -1,0 +1,38 @@
+.section-header {
+  margin-bottom: var(--spacing-3xl);
+}
+
+.section-header-center {
+  text-align: center;
+}
+
+.section-header-left {
+  text-align: left;
+}
+
+.section-title {
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+  max-width: 600px;
+}
+
+.section-header-center .section-subtitle {
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .section-subtitle {
+    font-size: var(--font-size-base);
+  }
+}

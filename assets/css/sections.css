@@ -1,0 +1,133 @@
+/* sections.css - estilos modernos e neutros para seções novas */
+:root {
+  --bg: #0f1115;
+  --panel: #141821;
+  --muted: #9aa3b2;
+  --text: #e9ecf1;
+  --primary: #e63946; /* acento discreto */
+  --ring: rgba(230,57,70,0.25);
+}
+
+/* Helpers */
+.container { max-width: 1200px; margin-inline: auto; padding: 0 20px; background: transparent !important; }
+.section-header { text-align: center; margin-bottom: 40px; }
+.section-header h2 { color: var(--text); font-weight: 700; letter-spacing: .3px; }
+.section-header p { color: var(--muted); margin-top: 8px; }
+
+/* Grade reutilizável (usa a grade das experiências para consistência) */
+.experiences-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 22px; }
+@media (max-width: 992px) { .experiences-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 640px) { .experiences-grid { grid-template-columns: 1fr; } }
+
+/* Cartão base */
+.experience-card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 22px; position: relative;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; overflow: hidden; }
+.experience-card:hover { transform: translateY(-4px); border-color: rgba(230,57,70,0.35); box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+
+.card-icon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 10px; margin-bottom: 14px;
+  background: rgba(230,57,70,0.12); color: var(--text); }
+.card-content h3 { color: var(--text) !important; margin: 6px 0 8px; font-size: 1.15rem; }
+.card-content p { color: var(--muted) !important; font-size: .95rem; line-height: 1.55; }
+.card-content .card-link { display: inline-flex; align-items: center; gap: 8px; color: var(--text); margin-top: 8px; opacity: .9; }
+.card-content .card-link i { transition: transform .25s ease; }
+.experience-card:hover .card-link i { transform: translateX(4px); }
+
+/* Destinos (cards com imagem) */
+.destinations-section { background: radial-gradient(1200px 60% at 50% -20%, rgba(230,57,70,0.08), transparent 60%); padding: 64px 0; }
+.destinations-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 22px; }
+@media (max-width: 992px) { .destinations-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 640px) { .destinations-grid { grid-template-columns: 1fr; } }
+.destination-card { position: relative; border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.06); }
+.destination-card img { width: 100%; height: 260px; object-fit: cover; display: block; filter: saturate(.9) contrast(1.05); transition: transform .35s ease; }
+.destination-card:hover img { transform: scale(1.04); }
+.destination-overlay { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: end; padding: 18px; gap: 6px;
+  background: linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,.1) 50%, transparent 80%); }
+.destination-overlay h3 { color: #fff; margin: 0; }
+.destination-overlay p { color: #eaeaea; margin: 0 0 4px; font-weight: 300; }
+.btn-explore { align-self: start; background: rgba(230,57,70,0.9); color: #fff; border: none; border-radius: 10px; padding: 10px 14px; font-weight: 600; cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
+.btn-explore:hover { transform: translateY(-2px); box-shadow: 0 10px 18px rgba(230,57,70,0.35); background: #e63946; }
+
+/* Experiências (ajuste de fundo neutro) */
+.experiences-section { padding: 64px 0; background: transparent !important; }
+
+/* About refinado */
+.about-section { padding: 64px 0; background: transparent !important; }
+.about-content { display: grid; grid-template-columns: 1.2fr .8fr; gap: 30px; align-items: center; }
+@media (max-width: 900px) { .about-content { grid-template-columns: 1fr; } }
+.about-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; }
+@media (max-width: 900px) { .about-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .about-grid { grid-template-columns: 1fr; } }
+.about-card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px; padding: 18px; }
+.about-card h4 { color: var(--text) !important; margin: 8px 0; }
+.about-card p { color: var(--muted) !important; }
+.about-card .card-icon { background: rgba(230,57,70,0.12); }
+.about-image { position: relative; }
+.about-image img { width: 100%; height: auto; border-radius: 14px; border: 1px solid rgba(255,255,255,0.06); }
+.stats-overlay { position: absolute; bottom: 16px; right: 16px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.08); color: #fff; border-radius: 12px; padding: 10px 14px; }
+.stat-number { font-size: 1.2rem; font-weight: 700; }
+
+/* CTA */
+.cta-section { padding: 64px 0; background: linear-gradient(180deg, rgba(230,57,70,0.06), rgba(255,255,255,0.0)); }
+.cta-content { text-align: center; }
+.cta-content h2 { color: var(--text); margin-bottom: 8px; }
+.cta-content p { color: var(--muted); margin-bottom: 16px; }
+.cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn-primary { background: #e63946; color: #fff; border: none; border-radius: 10px; padding: 12px 16px; font-weight: 700; cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease; }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 22px rgba(230,57,70,0.35); }
+.btn-secondary { background: transparent; border: 1px solid rgba(255,255,255,0.18); color: var(--text); border-radius: 10px; padding: 12px 16px; font-weight: 600; cursor: pointer;
+  transition: background .2s ease, border-color .2s ease; }
+.btn-secondary:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.28); }
+
+/* Hero */
+.hero-section { padding: 56px 0 36px; background: transparent !important; }
+.hero-content { display: grid; grid-template-columns: 1.1fr .9fr; gap: 28px; align-items: center; }
+@media (max-width: 900px) { .hero-content { grid-template-columns: 1fr; } }
+.hero-text h1 { color: var(--text); margin-bottom: 8px; }
+.hero-text p { color: var(--muted); margin-bottom: 14px; }
+.hero-image img { width: 100%; height: auto; border-radius: 14px; border: 1px solid rgba(255,255,255,0.06); }
+
+/* Frota, Depoimentos, FAQ, Reserva */
+.fleet-section, .testimonials-section, .faq-section, .booking-section { padding: 64px 0; background: transparent !important; }
+.fleet-section .experience-card .card-icon { background: rgba(230,57,70,0.12); }
+
+.faq-list { display: grid; gap: 12px; }
+.faq-list details { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 12px 14px; color: var(--text);
+  transition: border-color .2s ease, background .2s ease; }
+.faq-list details[open] { border-color: rgba(230,57,70,0.35); background: rgba(255,255,255,0.03); }
+.faq-list summary { cursor: pointer; font-weight: 600; list-style: none; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list p { color: var(--muted); margin-top: 8px; }
+
+/* Formulário de Reserva */
+.booking-form { max-width: 760px; margin: 0 auto; display: grid; gap: 12px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } }
+.booking-form input, .booking-form select, .booking-form textarea { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); color: var(--text);
+  border-radius: 10px; padding: 12px 12px; outline: none; transition: border-color .2s ease, box-shadow .2s ease; }
+.booking-form input::placeholder, .booking-form textarea::placeholder { color: #aeb6c2; }
+.booking-form input:focus, .booking-form select:focus, .booking-form textarea:focus { border-color: rgba(230,57,70,0.45); box-shadow: 0 0 0 4px var(--ring); }
+.booking-form button.btn-primary { justify-self: start; }
+
+/* Footer refinado (mantendo estrutura existente) */
+.footer { background: #0b0d11; color: var(--text); border-top: 1px solid rgba(255,255,255,0.06); }
+.footer .footer-content { display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr; gap: 22px; max-width: 1200px; margin: 0 auto; padding: 36px 20px; }
+@media (max-width: 992px) { .footer .footer-content { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .footer .footer-content { grid-template-columns: 1fr; } }
+.footer h3, .footer h4 { color: var(--text); margin-bottom: 10px; }
+.footer p, .footer li, .footer a { color: var(--muted); }
+.footer a { text-decoration: none; }
+.footer a:hover { color: #fff; }
+.footer .social-media a { display: inline-flex; width: 36px; height: 36px; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 8px; margin-right: 8px; transition: background .2s ease, border-color .2s ease; }
+.footer .social-media a:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.28); }
+.footer .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding: 14px 0; }
+.footer .footer-bottom .container { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.footer .footer-links { display: flex; gap: 12px; }
+
+/* Base de página para garantir contraste neutro coeso */
+body { background: var(--bg); color: var(--text); font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+main .section-header h2, main .section-header p { text-align: center; }

@@ -1,0 +1,56 @@
+.page-sintra-cascais .page-hero {
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  padding: 64px 0 32px 0;
+  text-align: center;
+}
+
+.page-sintra-cascais h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+
+.page-sintra-cascais .proposta-section {
+  margin-top: 48px;
+  padding: 32px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.page-sintra-cascais .proposta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.page-sintra-cascais .proposta-section p {
+  margin-bottom: 1.5em;
+  color: #444;
+}
+
+.galeria-section {
+  margin: 48px 0 32px 0;
+  text-align: center;
+}
+.galeria-section h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1em;
+}
+.galeria-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.galeria-imagens img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+.galeria-imagens img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}

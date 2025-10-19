@@ -1,54 +1,31 @@
 {
-  "name": "take-out-tours",
-  "version": "1.0.0",
-  "description": "Take Out Tours - Portugal com Alma | Site oficial para empresa de turismo portuguesa especializada em experiências autênticas",
-  "main": "server.js",
+  "name": "takeouttours",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\" \"npm run dev:api\"",
-    "dev:frontend": "cd frontend && npm run dev",
-    "dev:backend": "cd backend && npm run dev",
-    "dev:api": "cd api && npm run dev",
-    "build": "npm run build:frontend && npm run build:backend",
-    "build:frontend": "cd frontend && npm run build",
-    "build:backend": "cd backend && npm run build",
-    "start": "npm run start:api",
-    "start:api": "cd api && npm start",
-    "install:all": "npm install && cd frontend && npm install && cd ../api && npm install",
-    "clean": "rimraf frontend/dist frontend/node_modules api/node_modules node_modules",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "test": "jest",
-    "deploy": "npm run build && npm run deploy:gh-pages",
-    "deploy:gh-pages": "cd frontend && npm run deploy"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "keywords": [
-    "turismo",
-    "portugal",
-    "tours",
-    "react",
-    "node.js",
-    "php",
-    "sass",
-    "responsive",
-    "travel",
-    "tourism"
-  ],
-  "author": "Gabriel Menezes",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Gabriel-Menezes-01/take-out-tours.git"
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^6.30.1"
   },
-  "homepage": "https://gabriel-menezes-01.github.io/take-out-tours/",
   "devDependencies": {
-    "concurrently": "^8.2.2",
-    "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
-    "rimraf": "^5.0.5",
-    "jest": "^29.7.0"
+    "@eslint/js": "^9.36.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react-swc": "^4.1.0",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "globals": "^16.4.0",
+    "vite": "npm:rolldown-vite@7.1.14"
   },
-  "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=9.0.0"
+  "overrides": {
+    "vite": "npm:rolldown-vite@7.1.14"
   }
 }

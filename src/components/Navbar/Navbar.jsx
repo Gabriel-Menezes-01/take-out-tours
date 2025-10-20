@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './Navbar.css';
 
 import { useNavigate, useLocation } from 'react-router-dom';
-import { routes, BASE_PATH } from '../../utils/router';
+import { routes } from '../../utils/router';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);

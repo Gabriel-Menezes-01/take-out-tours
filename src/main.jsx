@@ -25,70 +25,72 @@ import CentroPage from './pages/CentroPage';
 
 const router = createBrowserRouter([
   {
-    path: `${BASE_PATH}/`,
+    path: '/',
     element: <App />,
   },
   {
-    path: `${BASE_PATH}/sintra-cascais`,
+    path: '/sintra-cascais',
     element: <SintraCascaisPage />,
   },
   {
-    path: `${BASE_PATH}/lisboa-setubal`,
+    path: '/lisboa-setubal',
     element: <LisboaSetubalPage />,
   },
   {
-    path: `${BASE_PATH}/alentejo-evora-monsaraz`,
+    path: '/alentejo-evora-monsaraz',
     element: <AlentejoPage />,
   },
   {
-    path: `${BASE_PATH}/algarve-autentico`,
+    path: '/algarve-autentico',
     element: <AlgarveAutenticoPage />,
   },
   {
-    path: `${BASE_PATH}/centro-fatima-obidos-nazare`,
+    path: '/centro-fatima-obidos-nazare',
     element: <CentroPage />,
   },
   {
-    path: `${BASE_PATH}/tours-personalizados`,
+    path: '/tours-personalizados',
     element: <PersonalizedToursPage />,
   },
   {
-    path: `${BASE_PATH}/patrimonio-historia`,
+    path: '/patrimonio-historia',
     element: <PatrimonioHistoriaPage />,
   },
   {
-    path: `${BASE_PATH}/sabores-vinhos`,
+    path: '/sabores-vinhos',
     element: <SaboresVinhosPage />,
   },
   {
-    path: `${BASE_PATH}/natureza-aventura`,
+    path: '/natureza-aventura',
     element: <NaturezaAventuraPage />,
   },
   {
-    path: `${BASE_PATH}/experiences`,
+    path: '/experiences',
     element: <ExperiencesPage />,
   },
   {
-    path: `${BASE_PATH}/about`,
+    path: '/about',
     element: <AboutPage />,
   },
   {
-    path: `${BASE_PATH}/blog`,
+    path: '/blog',
     element: <BlogPage />,
   },
   {
-    path: `${BASE_PATH}/destinations`,
+    path: '/destinations',
     element: <DestinationsPage />,
   },
   {
-    path: `${BASE_PATH}/testimonials`,
+    path: '/testimonials',
     element: <TestimonialsPage />,
   },
   {
-    path: `${BASE_PATH}/contact`,
+    path: '/contact',
     element: <ContactPage />,
   },
-])
+], {
+  basename: BASE_PATH
+})
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

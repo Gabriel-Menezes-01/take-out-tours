@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './Navbar.css';
 
 import { useNavigate, useLocation } from 'react-router-dom';
+import { routes, BASE_PATH } from '../../utils/router';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,8 +32,8 @@ export default function Navbar() {
       }
     };
 
-    if (location.pathname !== '/') {
-      navigate('/', { replace: false });
+    if (location.pathname !== routes.home) {
+      navigate(routes.home, { replace: false });
       setTimeout(go, 50);
     } else {
       go();
@@ -42,27 +43,27 @@ export default function Navbar() {
   };
 
   const menu = [
-    { label: 'Experiências', type: 'menu', route: '/experiences', items: [
-      { label: 'Natureza & Aventura', action: () => navigate('/natureza-aventura') },
-  { label: 'Património & História', action: () => navigate('/patrimonio-historia') },
-  { label: 'Sabores & Vinhos', action: () => navigate('/sabores-vinhos') },
-      { label: 'Tours Personalizados', action: () => navigate('/tours-personalizados') },
+    { label: 'Experiências', type: 'menu', route: routes.experiences, items: [
+      { label: 'Natureza & Aventura', action: () => navigate(routes.naturezaAventura) },
+  { label: 'Património & História', action: () => navigate(routes.patrimonioHistoria) },
+  { label: 'Sabores & Vinhos', action: () => navigate(routes.saboresVinhos) },
+      { label: 'Tours Personalizados', action: () => navigate(routes.toursPersonalizados) },
     ]},
-    { label: 'Destinos', type: 'menu', route: '/destinations', items: [
-  { label: 'Sintra & Cascais', action: () => navigate('/sintra-cascais') },
-  { label: 'Lisboa & Setúbal', action: () => navigate('/lisboa-setubal') },
-  { label: 'Alentejo (Évora, Monsaraz)', action: () => navigate('/alentejo-evora-monsaraz') },
-  { label: 'Algarve Autêntico', action: () => navigate('/algarve-autentico') },
-  { label: 'Centro (Fátima, Óbidos, Nazaré)', action: () => navigate('/centro-fatima-obidos-nazare') },
+    { label: 'Destinos', type: 'menu', route: routes.destinations, items: [
+  { label: 'Sintra & Cascais', action: () => navigate(routes.sintraCascais) },
+  { label: 'Lisboa & Setúbal', action: () => navigate(routes.lisboaSetubal) },
+  { label: 'Alentejo (Évora, Monsaraz)', action: () => navigate(routes.alentejoEvoraMonsaraz) },
+  { label: 'Algarve Autêntico', action: () => navigate(routes.algarveAutentico) },
+  { label: 'Centro (Fátima, Óbidos, Nazaré)', action: () => navigate(routes.centroFatimaObidosNazare) },
     ]},
-    { label: 'Sobre Nós', type: 'menu', route: '/about', items: [
-      { label: 'A equipa local', action: () => navigate('/about#team') },
-      { label: 'Missão & valores', action: () => navigate('/about#mission') },
-      { label: 'Frota e conforto', action: () => navigate('/about#fleet') },
+    { label: 'Sobre Nós', type: 'menu', route: routes.about, items: [
+      { label: 'A equipa local', action: () => navigate(`${routes.about}#team`) },
+      { label: 'Missão & valores', action: () => navigate(`${routes.about}#mission`) },
+      { label: 'Frota e conforto', action: () => navigate(`${routes.about}#fleet`) },
     ]},
-    { label: 'Blog/Diário', type: 'route', route: '/blog' },
-    { label: 'Testemunhos', type: 'route', route: '/testimonials' },
-    { label: 'Contacto / Reserva', type: 'route', route: '/contact' },
+    { label: 'Blog/Diário', type: 'route', route: routes.blog },
+    { label: 'Testemunhos', type: 'route', route: routes.testimonials },
+    { label: 'Contacto / Reserva', type: 'route', route: routes.contact },
   ];
 
   return (

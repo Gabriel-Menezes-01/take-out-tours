@@ -1,13 +1,14 @@
 import Container from '../../components/Container';
 import Button from '../../components/Button';
 import { useNavigate } from 'react-router-dom';
+import { routes } from '../../utils/router';
 import './Hero.css';
 
 export default function Hero() {
   const navigate = useNavigate();
 
-  const goToExperiencesPage = () => navigate('/experiences');
-  const goToContact = () => navigate('/contact');
+  const goToExperiencesPage = () => navigate(routes.experiences);
+  const goToContact = () => navigate(routes.contact);
 
   return (
     <section id="hero" className="hero">

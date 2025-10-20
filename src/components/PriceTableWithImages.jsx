@@ -1,6 +1,7 @@
 import './PriceTableWithImages.css';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useRef, useCallback } from 'react';
+import { routes } from '../utils/router';
 
 const DESTINOS = [
   {
@@ -71,7 +72,7 @@ export default function PriceTableWithImages() {
   };
 
   const handleReserve = (destinoNome) => {
-    navigate(`/contact?destino=${encodeURIComponent(destinoNome)}`);
+    navigate(`${routes.contact}?destino=${encodeURIComponent(destinoNome)}`);
   };
 
   return (

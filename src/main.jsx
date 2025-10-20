@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './styles/variables.css'
 import './styles/reset.css'
 import './index.css'
+import { BASE_PATH } from './utils/router'
 import App from './App.jsx'
 import ExperiencesPage from './pages/ExperiencesPage'
 import AboutPage from './pages/AboutPage'
@@ -24,67 +25,67 @@ import CentroPage from './pages/CentroPage';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: `${BASE_PATH}/`,
     element: <App />,
   },
   {
-    path: '/sintra-cascais',
+    path: `${BASE_PATH}/sintra-cascais`,
     element: <SintraCascaisPage />,
   },
   {
-    path: '/lisboa-setubal',
+    path: `${BASE_PATH}/lisboa-setubal`,
     element: <LisboaSetubalPage />,
   },
   {
-    path: '/alentejo-evora-monsaraz',
+    path: `${BASE_PATH}/alentejo-evora-monsaraz`,
     element: <AlentejoPage />,
   },
   {
-    path: '/algarve-autentico',
+    path: `${BASE_PATH}/algarve-autentico`,
     element: <AlgarveAutenticoPage />,
   },
   {
-    path: '/centro-fatima-obidos-nazare',
+    path: `${BASE_PATH}/centro-fatima-obidos-nazare`,
     element: <CentroPage />,
   },
   {
-    path: '/tours-personalizados',
+    path: `${BASE_PATH}/tours-personalizados`,
     element: <PersonalizedToursPage />,
   },
   {
-    path: '/patrimonio-historia',
+    path: `${BASE_PATH}/patrimonio-historia`,
     element: <PatrimonioHistoriaPage />,
   },
   {
-    path: '/sabores-vinhos',
+    path: `${BASE_PATH}/sabores-vinhos`,
     element: <SaboresVinhosPage />,
   },
   {
-    path: '/natureza-aventura',
+    path: `${BASE_PATH}/natureza-aventura`,
     element: <NaturezaAventuraPage />,
   },
   {
-    path: '/experiences',
+    path: `${BASE_PATH}/experiences`,
     element: <ExperiencesPage />,
   },
   {
-    path: '/about',
+    path: `${BASE_PATH}/about`,
     element: <AboutPage />,
   },
   {
-    path: '/blog',
+    path: `${BASE_PATH}/blog`,
     element: <BlogPage />,
   },
   {
-    path: '/destinations',
+    path: `${BASE_PATH}/destinations`,
     element: <DestinationsPage />,
   },
   {
-    path: '/testimonials',
+    path: `${BASE_PATH}/testimonials`,
     element: <TestimonialsPage />,
   },
   {
-    path: '/contact',
+    path: `${BASE_PATH}/contact`,
     element: <ContactPage />,
   },
 ])

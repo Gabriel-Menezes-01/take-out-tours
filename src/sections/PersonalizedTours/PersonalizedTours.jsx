@@ -3,6 +3,7 @@ import SectionHeader from '../../components/SectionHeader';
 import Button from '../../components/Button';
 import './PersonalizedTours.css';
 import { useNavigate } from 'react-router-dom';
+import { routes } from '../../utils/router';
 
 export default function PersonalizedTours() {
   const navigate = useNavigate();
@@ -25,8 +26,8 @@ export default function PersonalizedTours() {
           </div>
         </div>
         <div className="pt-cta">
-          <Button size="lg" onClick={() => navigate('/tours-personalizados')}>Configurar o meu tour</Button>
-          <Button size="lg" variant="secondary" onClick={() => navigate('/contact')}>Falar com especialista</Button>
+          <Button size="lg" onClick={() => navigate(routes.toursPersonalizados)}>Configurar o meu tour</Button>
+          <Button size="lg" variant="secondary" onClick={() => navigate(routes.contact)}>Falar com especialista</Button>
         </div>
       </Container>
     </section>

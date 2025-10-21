@@ -65,8 +65,48 @@
   align-self: flex-start;
 }
 
+@media (max-width: 768px) {
+  .booking {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .booking-form {
+    max-width: 100%;
+  }
+
+  .form-row {
+    gap: var(--spacing-md);
+  }
+}
+
 @media (max-width: 640px) {
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  .booking-form {
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .booking {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea {
+    padding: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+  }
+
+  .booking-form textarea {
+    min-height: 80px;
+  }
+
+  .booking-form button {
+    width: 100%;
+    align-self: stretch;
   }
 }

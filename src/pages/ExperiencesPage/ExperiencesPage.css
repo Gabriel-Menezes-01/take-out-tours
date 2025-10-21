@@ -84,8 +84,38 @@
   }
 }
 
+@media (max-width: 768px) {
+  .page-hero {
+    padding: var(--spacing-2xl) 0 var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .page-hero h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  .page-hero p {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 640px) {
   .page-grid {
     grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .page-card-media {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-cta {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .page-cta-box {
+    padding: var(--spacing-xl);
   }
 }

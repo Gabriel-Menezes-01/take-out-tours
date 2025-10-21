@@ -145,3 +145,33 @@
     height: 350px;
   }
 }
+
+@media (max-width: 480px) {
+  .hero {
+    padding: calc(var(--navbar-height) + var(--spacing-xl)) 0 var(--spacing-xl);
+  }
+
+  .hero-title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    height: 280px;
+  }
+}

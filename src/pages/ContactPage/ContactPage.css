@@ -21,4 +21,26 @@
 
 .sent-box { border:1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--spacing-xl); text-align:center; background: rgba(255,255,255,0.03); }
 
-@media (max-width: 1024px) { .info-grid { grid-template-columns: 1fr; } .form-grid { grid-template-columns: 1fr; } }
+/* ==================== RESPONSIVIDADE ==================== */
+@media (max-width: 1024px) { 
+	.page-contact { padding-top: calc(var(--navbar-height) + 12px); }
+	.contact-hero { padding: var(--spacing-2xl) 0 var(--spacing-xl); }
+	.contact-hero h1 { font-size: var(--font-size-3xl); }
+	.info-grid { grid-template-columns: 1fr; gap: var(--spacing-lg); }
+	.form-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+	.contact-hero p { max-width: 100%; }
+	.info-card { padding: var(--spacing-lg); }
+}
+
+@media (max-width: 480px) {
+	.page-contact { padding-top: calc(var(--navbar-height) + 8px); }
+	.contact-hero { padding: var(--spacing-xl) 0 var(--spacing-lg); }
+	.contact-hero h1 { font-size: var(--font-size-2xl); }
+	.form-grid { gap: var(--spacing-md); }
+	.form-grid input, .form-grid select, .form-grid textarea { padding: 0.65rem 0.75rem; font-size: var(--font-size-sm); }
+	.form-grid .actions { text-align: center; }
+	.form-grid .actions .btn { width: 100%; }
+}

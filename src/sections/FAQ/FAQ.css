@@ -73,3 +73,48 @@
   color: var(--color-text-muted);
   line-height: 1.7;
 }
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+@media (max-width: 768px) {
+  .faq {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .faq-question {
+    padding: var(--spacing-md);
+    font-size: var(--font-size-base);
+  }
+
+  .faq-icon {
+    font-size: var(--font-size-xl);
+  }
+
+  .faq-answer p {
+    padding: 0 var(--spacing-md) var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .faq {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .faq-list {
+    gap: var(--spacing-sm);
+  }
+
+  .faq-question {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-sm);
+  }
+
+  .faq-icon {
+    font-size: var(--font-size-lg);
+  }
+
+  .faq-answer p {
+    padding: 0 var(--spacing-md) var(--spacing-sm);
+    font-size: var(--font-size-sm);
+  }
+}

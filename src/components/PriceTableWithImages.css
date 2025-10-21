@@ -118,3 +118,167 @@
 .price-carousel-arrow.right {
   right: 8px;
 }
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) {
+  .price-table-img-section {
+    padding: 24px 8px 32px 8px;
+  }
+
+  .price-table-img-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.8em;
+  }
+
+  .price-table-img-grid {
+    gap: 32px;
+    padding: 12px 12px 24px 12px;
+  }
+
+  .price-table-img-card {
+    width: 350px;
+    min-height: 440px;
+    padding: 24px 20px;
+  }
+
+  .price-table-img {
+    width: 310px;
+    height: 190px;
+  }
+
+  .price-carousel-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+/* Mobile (481px - 767px) */
+@media (max-width: 767px) {
+  .price-table-img-section {
+    padding: 20px 4px 24px 4px;
+    margin: 24px auto;
+  }
+
+  .price-table-img-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.7em;
+    padding: 0 12px;
+  }
+
+  .price-table-img-grid {
+    gap: 20px;
+    padding: 8px 8px 20px 8px;
+  }
+
+  .price-table-img-card {
+    width: 280px;
+    min-height: 400px;
+    padding: 20px 16px;
+  }
+
+  .price-table-img {
+    width: 248px;
+    height: 150px;
+    margin-bottom: 12px;
+  }
+
+  .price-table-img-info h3 {
+    font-size: 1rem;
+  }
+
+  .price-table-img-preco {
+    font-size: 0.95rem;
+  }
+
+  .price-table-img-reserve {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+    margin-top: 14px;
+  }
+
+  .price-carousel-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .price-carousel-arrow.left {
+    left: 4px;
+  }
+
+  .price-carousel-arrow.right {
+    right: 4px;
+  }
+}
+
+/* Mobile Pequeno (até 480px) */
+@media (max-width: 480px) {
+  .price-table-img-section {
+    padding: 16px 0 20px 0;
+    margin: 20px auto;
+    border-radius: 12px;
+  }
+
+  .price-table-img-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.6em;
+    padding: 0 8px;
+  }
+
+  .price-table-img-grid {
+    gap: 16px;
+    padding: 8px 8px 16px 8px;
+  }
+
+  .price-table-img-card {
+    width: 240px;
+    min-height: 380px;
+    padding: 16px 12px;
+  }
+
+  .price-table-img {
+    width: 216px;
+    height: 130px;
+    margin-bottom: 10px;
+  }
+
+  .price-table-img-info h3 {
+    font-size: 0.95rem;
+    margin-bottom: 3px;
+  }
+
+  .price-table-img-preco {
+    font-size: 0.9rem;
+  }
+
+  .price-table-img-reserve {
+    padding: 7px 16px;
+    font-size: 0.85rem;
+    margin-top: 12px;
+  }
+
+  .price-table-img-note {
+    font-size: 0.85em;
+    margin-top: 10px;
+  }
+
+  .price-carousel-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .price-carousel-arrow.left {
+    left: 2px;
+  }
+
+  .price-carousel-arrow.right {
+    right: 2px;
+  }
+}

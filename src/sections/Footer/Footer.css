@@ -1,7 +1,7 @@
-/* Footer escuro personalizado */
+﻿/* Footer tema claro */
 .footer {
-  background: #111216;
-  border-top: 1px solid #23242a;
+  background: var(--color-bg-secondary);
+  border-top: 1px solid var(--color-border);
   padding: var(--spacing-3xl) 0 var(--spacing-xl);
 }
 
@@ -14,10 +14,10 @@
   border-bottom: 1px solid var(--color-border);
 }
 
-/* Títulos brancos */
+/* Títulos tema claro */
 .footer-section h3,
 .footer-section h4 {
-  color: #fff;
+  color: var(--color-text);
   margin-bottom: var(--spacing-lg);
   font-size: var(--font-size-lg);
 }
@@ -26,11 +26,12 @@
   font-size: var(--font-size-xl);
   font-weight: 700;
   letter-spacing: -0.02em;
+  color: var(--color-text);
 }
 
-/* Tagline clara */
+/* Tagline */
 .footer-tagline {
-  color: #e5e7eb;
+  color: var(--color-text-muted);
   line-height: 1.6;
   margin-bottom: var(--spacing-lg);
 }
@@ -40,21 +41,20 @@
   gap: var(--spacing-md);
 }
 
-/* Ícones sociais claros */
+/* Ícones sociais */
 .footer-social a {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid #23242a;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  color: #e5e7eb;
+  color: var(--color-text-muted);
   transition: all var(--transition-base);
 }
 
-/* Hover laranja no escuro */
 .footer-social a:hover {
   background: var(--color-accent);
   border-color: var(--color-accent);
@@ -69,13 +69,12 @@
   gap: var(--spacing-sm);
 }
 
-/* Links claros */
+/* Links */
 .footer-section a {
-  color: #e5e7eb;
+  color: var(--color-text-muted);
   transition: color var(--transition-fast);
 }
 
-/* Hover laranja */
 .footer-section a:hover {
   color: var(--color-accent);
 }
@@ -86,9 +85,9 @@
   gap: var(--spacing-sm);
 }
 
-/* Contato claro */
+/* Contato */
 .footer-contact p {
-  color: #e5e7eb;
+  color: var(--color-text-muted);
   font-size: var(--font-size-sm);
 }
 
@@ -100,9 +99,9 @@
   gap: var(--spacing-md);
 }
 
-/* Texto inferior claro */
+/* Texto inferior */
 .footer-bottom p {
-  color: #9ca3af;
+  color: var(--color-text-subtle);
   font-size: var(--font-size-sm);
 }
 
@@ -113,9 +112,9 @@
   font-size: var(--font-size-sm);
 }
 
-/* Links inferiores claros */
+/* Links inferiores */
 .footer-links a {
-  color: #9ca3af;
+  color: var(--color-text-subtle);
   transition: color var(--transition-fast);
 }
 
@@ -123,9 +122,9 @@
   color: var(--color-accent);
 }
 
-/* Separador claro */
+/* Separador */
 .footer-links span {
-  color: #9ca3af;
+  color: var(--color-text-subtle);
 }
 
 /* ==================== RESPONSIVIDADE ==================== */
